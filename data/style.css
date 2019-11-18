@@ -1,54 +1,67 @@
+body{
+  background-color: rgb(150 150 255);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 26px;
+}
 .article{
   width: 80%;
   height: 2050px;
   background: initial;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .left-panel{
-  width: 30%;
+  width: 33%;
   float: left;
   background: #3D127A;
-  height: 2048px;
+  height: inherit;
   border-style: solid;
-  border-color: #3D127A;
+  border-color: white;
   border-radius: 25px 0px 0px 25px;
 }
 img.mugshot{
-  max-width: 100%;
+  display: block;
+  max-width: 98%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .wh-title{
   box-sizing: content-box;
-  height: 32px;
+  height: 45px;
   width: 345px;
-  margin-left: 50px;
-  padding: 15px 0px;
-
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
   border-radius: 30px;
   background: white;
 
   color: #3D127A;
-  font-size: 32px;
+  font-size: 1.4em;
   margin-top:20px;
   text-align: center;
   font-family: sans-serif;
   font-weight: bolder;
+
 }
 .wh-text{
-  margin:auto;
+  margin-left:20px;
+  margin-right: 20px;
   color: white;
-  font-size: 26px;
+  font-size: 1em;
   text-align: left;
   font-family: sans-serif;
   padding-left: 50px;
-  line-height: auto;
-  vertical-align: middle;
 }
 .wh-icon{
   background: white;
   height: 45px;
-  width: 10%;
-  border-radius: 0px 10px 10px 0px  ;
+  //width: 8.5%;
+  width: 45px;
+  border-radius: 0px 5px 10px 0px;
   float:left;
   margin-top: 13px;
 }
@@ -58,12 +71,10 @@ img.mugshot{
   letter-spacing: normal;
 }
   .left-panel .block{
-    background-color: inherit;
     height: 75px;
   }
 img.icon{
   margin: auto;
-  //position: relative;
   max-height: 80%;
   height:auto;
   float:right;
@@ -71,10 +82,10 @@ img.icon{
   padding-right: 5px;
 }
 .right-panel{
-  width: 60%;
-  float: left;
-  background: inherit;
-  height: 2048px;
+  width: 66%;
+  float: right;
+  background: white;
+  height: inherit;
   border-radius: 0px 25px 25px 0px;
   border-style: inset;
   border-color: #3D127A;
@@ -82,24 +93,32 @@ img.icon{
 .title{
   color: #3D127A;
   text-align: center;
-  font-size: 80px;
+  font-size: 3em;
   font-family: sans-serif;
   font-weight: bolder;
   letter-spacing: 20px;
   text-transform: uppercase;
 }
+.column{
+  color: white;
+  display: none;
+}
+.row{
+  display: block;
+}
 .bl-title{
   box-sizing: content-box;
-  height: 32px;
-  width: 460px;
+  height: 45px;
+  width: 560px;
   margin-left: 50px;
-  padding: 15px 0px;
+  padding-top: auto;
+  padding-bottom: auto;
 
   border-radius: 30px;
   background: #3D127A;
 
   color: white;
-  font-size: 32px;
+  font-size: 1.4em;
   text-align: center;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -109,7 +128,7 @@ img.icon{
   margin-left: 20px;
   margin-right: 20px;
   color: #3D127A;
-  font-size: 26px;
+  font-size: 1em;
   font-family: sans-serif;
   font-weight: 500;
 }
@@ -125,9 +144,6 @@ table tr th:last-child{
   text-align: left;
   border-left: solid;
 }
-progress{
-  border-radius: 0px 10px 10px 0px;
-}
 .blob{
   box-sizing: border-box;
   height: 30px;
@@ -137,20 +153,100 @@ progress{
   border-radius: 10px;
   background: #6639A6;
   border-style: solid;
-  border-color: #46099a;
-}
-.left-panel .block .blob:nth-child(2){
-  margin-left: 50px;
-  background-color: white;
+  border-color: #46099a;S
 }
 .check{
-  box-sizing: border-box;
-  height: 30px;
-  width: 30px;
-  float:left;
-  margin-left: 5px;
-  border-radius: 10px;
   background: white;
   border-style: solid;
   border-color: #46099a;
+}
+
+@media (max-width:1776px){
+  .article{
+    width: 90%;
+    height: 2050px;
+    background: initial;
+  }
+
+}
+@media (max-width:1591px){
+  .article{
+    width: 100%;
+    height: 2050px;
+    background: initial;
+  }
+
+}
+@media (max-width:1459px) {
+  .wh-icon{
+    //width:10%;
+  }
+}
+@media (max-width:1329px) {
+  .article{
+    width: 100%;
+    height: 2050px;
+    background: initial;
+  }
+  .bl-title{
+    width: 460px;
+  }
+  body{ font-size: 22px}
+}
+@media (max-width:1205px) {
+  .article{
+    width: 100%;
+    height: 2500px;
+    background: initial;
+  }
+  .left-panel{
+    width: 32.8%;
+  }
+}
+@media (max-width:1155px) {
+  .wh-icon{
+    //width:11%;
+  }
+}
+@media (max-width:1127px) {
+  body{
+    font-size: 26px;
+  }
+  .left-panel{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .right-panel{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    border-radius: 0px 0px 25px 25px;
+  }
+  .column{
+    display: block;
+  }
+  .row{
+    display: none;
+  }
+  .bl-title{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 940px) {
+  .article{
+    width: 100%;
+  }
+  .left-panel{
+    width: 100%;
+    height: 2050px;
+  }
+  .right-panel{
+    width: 100%;
+    height: 1900px;
+  }
 }
